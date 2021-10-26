@@ -1,7 +1,7 @@
 module.exports = {
   siteMetadata: {
     siteUrl: "https://www.ontime-creative.com",
-    title: "ontime",
+    title: "on time creative",
   },
   plugins: [
     "gatsby-plugin-sass",
@@ -22,7 +22,7 @@ module.exports = {
     {
       resolve: "gatsby-plugin-manifest",
       options: {
-        icon: "src/images/icon.png",
+        icon: "src/images/favicon_package_v0.16/favicon-16x16.png",
       },
     },
     "gatsby-plugin-sharp",

@@ -63,7 +63,7 @@ body {
     animation: animation 300s linear infinite 0s;
   }
 
-  h1, h2, h5 {
+  h1, h2, h4 {
     font-family: $font-menu;
   }
 
@@ -73,16 +73,18 @@ body {
       color: $color-title;
   }
 
-  h5{
+  h2{
+    font-weight: 500;
+    color: $bkg-yellow-Light;
+    
+}
+  h4{
     color: $color-title;
+    font-weight: 500;
   }
 
-  h2{
-    font-weight: bold;
-    color: $bkg-yellow-Light;
-}
-
-.container {
+  
+  .container {
     display: flex;
     justify-content: center;
     align-items: center;

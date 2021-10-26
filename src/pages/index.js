@@ -1,7 +1,7 @@
 import * as React from "react";
 import Layout from "../components/layout";
 import "../styles/main.scss";
-
+import "normalize.css";
 import logo from "../images/On Time Creative iso-25.png";
 
 const IndexPage = () => {
@@ -10,7 +10,7 @@ const IndexPage = () => {
       <main>
         <div className="container">
           <img src={logo} alt="On Time Creative" />
-          <h1>On Time Creactive </h1>
+          <h1>On Time Creative </h1>
           <h2>Digital Markting Consultant</h2>
         </div>
       </main>

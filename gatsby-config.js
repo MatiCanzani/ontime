@@ -1,17 +1,22 @@
 module.exports = {
   siteMetadata: {
-    siteUrl: "https://www.yourdomain.tld",
-    title: "Ontime",
+    siteUrl: "https://www.ontime-creative.com",
+    title: "ontime",
   },
   plugins: [
     "gatsby-plugin-sass",
-    "gatsby-plugin-image",
     {
-      resolve: "gatsby-plugin-google-analytics",
+      resolve: `gatsby-plugin-google-fonts`,
       options: {
-        trackingId: "",
-      },
+        fonts: [
+          `montserrat`,
+          `source sans pro\:300,400,400i,700, 900` // you can also specify font weights and styles
+        ],
+        display: 'swap'
     },
+  },
+    
+    "gatsby-plugin-image",
     "gatsby-plugin-react-helmet",
     "gatsby-plugin-sitemap",
     {

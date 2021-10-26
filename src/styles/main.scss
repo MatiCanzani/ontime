@@ -1,0 +1,91 @@
+@import "variables";
+body {
+    background-color: $bkg-blue;
+  }
+.background {
+    display: block;
+    background-repeat: repeat;
+    background-size: cover;
+    background-blend-mode: multiply;
+    font-family: $font-menu;
+    color: whitesmoke;
+    position: fixed;
+    height: 100vh;
+    width: 100vw;
+    z-index: -1;
+    margin: 0;
+  }
+  
+  .background1 {
+    display: block;
+    background-image: url('../images/bck-1.png');
+    background-repeat: repeat;
+    -webkit-background-size: cover;
+    background-size: cover;
+    background-blend-mode: multiply;
+    position: fixed;
+    height: 100vh;
+    width: 100vw;
+    margin: 0;
+    -webkit-animation: animation 200s linear infinite reverse 0s;
+    -webkit-animation-direction: reverse;
+    animation: animation 200s linear infinite reverse 0s;
+    animation-direction: reverse;
+  }
+  
+  .background2 {
+    display: block;
+    background-image: url('../images/bck-2.png');
+    background-repeat: repeat;
+    background-size: cover;
+    background-blend-mode: multiply;
+    font-family: $font-menu;
+    position: fixed;
+    height: 100vh;
+    width: 100vw;
+    margin: 0;
+    transform: rotate(110deg);
+    animation: animation 300s linear infinite reverse 0s;
+  
+  }
+  .background3 {
+    display: block;
+    background-image: url('../images/bck-3.png');
+    background-repeat: repeat;
+    background-size: cover;
+    background-blend-mode: multiply;
+    font-family: $font-menu;
+    position: fixed;
+    height: 100vh;
+    width: 100vw;
+    margin: 0;
+    transform: rotate(-135deg);
+    animation: animation 300s linear infinite 0s;
+  }
+
+  h1, h2, h5 {
+    font-family: $font-menu;
+  }
+
+  h1{
+      font-weight: 900;
+      font-size: 3rem;
+      color: $color-title;
+  }
+
+  h5{
+    color: $color-title;
+  }
+
+  h2{
+    font-weight: bold;
+    color: $bkg-yellow-Light;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    height: 100vh;
+  }

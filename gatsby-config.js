@@ -6,11 +6,11 @@ module.exports = {
   plugins: [
     "gatsby-plugin-sass",
     {
-      resolve: `gatsby-plugin-google-fonts`,
+      resolve: `gatsby-plugin-google-fonts-v2`,
       options: {
         fonts: [
-          `montserrat`,
-          `source sans pro\:300,400,400i,700, 900` // you can also specify font weights and styles
+          {family: `Montserrat`, variants: [`400`, `700`, `900`]},
+          {family: `source sans pro`, variants: [`400`, `700`, `900`]},
         ],
         display: 'swap'
     },
@@ -22,7 +22,7 @@ module.exports = {
     {
       resolve: "gatsby-plugin-manifest",
       options: {
-        icon: "src/images/favicon_package_v0.16/favicon-16x16.png",
+        icon: "src/images/favicon/favicon-32x32.png",
       },
     },
     "gatsby-plugin-sharp",

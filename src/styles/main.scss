@@ -1,90 +1,101 @@
 @import "variables";
+@import "animation";
 body {
-    background-color: $bkg-blue;
-  }
-.background {
-    display: block;
-    background-repeat: repeat;
-    background-size: cover;
-    background-blend-mode: multiply;
-    font-family: $font-menu;
-    color: whitesmoke;
-    position: fixed;
-    height: 100vh;
-    width: 100vw;
-    z-index: -1;
-    margin: 0;
-  }
-  
-  .background1 {
-    display: block;
-    background-image: url('../images/bck-1.png');
-    background-repeat: repeat;
-    -webkit-background-size: cover;
-    background-size: cover;
-    background-blend-mode: multiply;
-    position: fixed;
-    height: 100vh;
-    width: 100vw;
-    margin: 0;
-    -webkit-animation: animation 200s linear infinite reverse 0s;
-    -webkit-animation-direction: reverse;
-    animation: animation 200s linear infinite reverse 0s;
-    animation-direction: reverse;
-  }
-  
-  .background2 {
-    display: block;
-    background-image: url('../images/bck-2.png');
-    background-repeat: repeat;
-    background-size: cover;
-    background-blend-mode: multiply;
-    font-family: $font-menu;
-    position: fixed;
-    height: 100vh;
-    width: 100vw;
-    margin: 0;
-    transform: rotate(110deg);
-    animation: animation 300s linear infinite reverse 0s;
-  
-  }
-  .background3 {
-    display: block;
-    background-image: url('../images/bck-3.png');
-    background-repeat: repeat;
-    background-size: cover;
-    background-blend-mode: multiply;
-    font-family: $font-menu;
-    position: fixed;
-    height: 100vh;
-    width: 100vw;
-    margin: 0;
-    transform: rotate(-135deg);
-    animation: animation 300s linear infinite 0s;
-  }
-
-  h1, h2, h4 {
-    font-family: $font-menu;
-    text-align: center;
-  }
-
-  h1{
-      font-weight: 900;
-      font-size: 3rem;
-      color: $color-title;
-  }
-
-  h2{
-    font-weight: 500;
-    color: $bkg-yellow-Light;
-    
+  background-color: $bkg-white;
 }
-  h4{
-    color: $color-title;
-    font-weight: 500;
-  }
+.background {
+  display: block;
+  background-repeat: repeat;
+  background-size: cover;
+  background-blend-mode: multiply;
+  font-family: $font-menu;
+  color: whitesmoke;
+  position: fixed;
+  height: 100vh;
+  width: 100vw;
+  z-index: -1;
+  margin: 0;
+}
 
+.background1 {
+  display: block;
+  background-image: url("../images/bkg-1.png");
+  background-repeat: repeat;
+  -webkit-background-size: cover;
+  background-size: cover;
+  background-blend-mode: multiply;
+  position: fixed;
+  height: 100vh;
+  width: 100vw;
+  margin: 0;
+  -webkit-animation: animation 200s linear infinite reverse 0s;
+  animation: animation 200s linear infinite reverse 0s;
+}
 
+.background2 {
+  display: block;
+  background-image: url("../images/bkg-2.png");
+  background-repeat: repeat;
+  background-size: cover;
+  background-blend-mode: multiply;
+  font-family: $font-menu;
+  position: fixed;
+  height: 100vh;
+  width: 100vw;
+  margin: 0;
+  transform: rotate(110deg);
+  animation: animation 300s linear infinite reverse 0s;
+}
+.background3 {
+  display: block;
+  background-image: url("../images/bkg-3.png");
+  background-repeat: repeat;
+  background-size: cover;
+  background-blend-mode: multiply;
+  font-family: $font-menu;
+  position: fixed;
+  height: 100vh;
+  width: 100vw;
+  margin: 0;
+  transform: rotate(-135deg);
+  animation: animation 300s linear infinite 0s;
+}
+
+h1,
+h2,
+h4 {
+  font-family: $font-menu;
+  text-align: center;
+}
+
+h1 {
+  font-weight: 900;
+  color: $color-title;
+  margin-top: 2rem;
+  margin-bottom: 1rem !important;
+
+}
+
+h2 {
+  font-weight: 500;
+  color: $color-subtitle;
+  font-size: 1rem;
+  margin: 0;
+}
+h4 {
+  color: $color-title;
+  font-weight: 500;
+}
+
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  height: 100vh;
+}
+
+@media screen and (min-width: 767px) {
   .container {
     display: flex;
     justify-content: center;
@@ -92,15 +103,16 @@ body {
     flex-direction: column;
     height: 100vh;
   }
-
-  @media screen and (min-width: 767px) {
-    .container {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        flex-direction: column;
-        height: 100vh;
-      }
+  h1 {
+    font-size: 3.3rem !important;
+    margin-top: 2rem;
+  }
+  h2 {
+    font-size: 1.4rem;
+  }
 }
 
-
+.logo {
+  height: 80px;
+  width: auto;
+}

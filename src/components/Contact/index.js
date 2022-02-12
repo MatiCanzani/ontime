@@ -11,7 +11,8 @@ const Contact = () => {
         data-netlify="true"
         data-netlify-honeypot="bot-field"
         action="/success"
-      >
+        onSubmit="submit"
+        >
         <p>
           <label>
             Your Name: <input type="text" name="name" placeholder="Your Name" />

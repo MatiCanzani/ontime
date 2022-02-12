@@ -5,12 +5,11 @@ const Contact = () => {
     <section id="contact">
       <h2> Contact </h2>
       <form
-        // name="contact"
+        name="contact"
         method="POST"
         data-netlify="true"
         data-netlify-honeypot="bot-field"
         action="/success"
-        onSubmit="submit"
         >
         <p>
           <label>
@@ -24,11 +23,11 @@ const Contact = () => {
         </p>
         <p>
           <label>
-            Message: <textarea name="message"></textarea>
+            Message: <textarea name="message" placeholder="your message"></textarea>
           </label>
         </p>
         <p>
-          <button type="submit">Send</button>
+          <button>Send</button>
         </p>
       </form>
     </section>

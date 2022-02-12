@@ -2,6 +2,7 @@ import React from "react";
 import "../styles/main.scss";
 import Helmet from "react-helmet";
 import "normalize.css";
+import Header from '../components/Header'
 
 const Layout = ({ children }) => {
   return (
@@ -24,6 +25,7 @@ const Layout = ({ children }) => {
         <div className="background2"></div>
         <div className="background3"></div>
       </div>
+      <Header />
       {children}
     </>
   );

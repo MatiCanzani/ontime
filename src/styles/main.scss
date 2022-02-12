@@ -1,8 +1,19 @@
 @import "variables";
 @import "animation";
+html {
+  font-size: 62.5%;
+  box-sizing: boder-boox;
+}
+*,
+*:before,
+*after {
+  box-sizing: inherit;
+}
+
 body {
   background-color: $bkg-white;
 }
+
 .background {
   display: block;
   background-repeat: repeat;
@@ -73,7 +84,6 @@ h1 {
   color: $color-title;
   margin-top: 2rem;
   margin-bottom: 1rem !important;
-
 }
 
 h2 {

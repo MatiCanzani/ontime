@@ -25,7 +25,7 @@ const codeStyles = {
 }
 
 // markup
-const NotFoundPage = () => {
+const Success = () => {
   return (
     <main style={pageStyles}>
       <title>Muhas gracias</title>
@@ -43,4 +43,4 @@ const NotFoundPage = () => {
   )
 }
 
-export default NotFoundPage
+export default Success;

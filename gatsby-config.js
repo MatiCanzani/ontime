@@ -19,17 +19,6 @@ module.exports = {
       },
     },
     "gatsby-plugin-sass",
-    {
-      resolve: `gatsby-plugin-google-fonts-v2`,
-      options: {
-        fonts: [
-          { family: `Montserrat`, variants: [`400`, `700`, `900`] },
-          { family: `source sans pro`, variants: [`400`, `700`, `900`] },
-        ],
-        display: "swap",
-      },
-    },
-
     "gatsby-plugin-image",
     "gatsby-plugin-react-helmet",
     "gatsby-plugin-sitemap",

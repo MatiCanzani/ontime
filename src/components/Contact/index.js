@@ -9,8 +9,7 @@ const Contact = () => {
         name="contact"
         method="POST"
         data-netlify="true"
-        data-netlify-honeypot="bot-field"
-      >
+git a      >
         <p>
           <label>
             Your Name: <input type="text" name="name" placeholder="Your Name" />
@@ -19,15 +18,6 @@ const Contact = () => {
         <p>
           <label>
             Your Email: <input type="email" name="email" placeholder="Yor email" />
-          </label>
-        </p>
-        <p>
-          <label>
-            Your Role:{" "}
-            <select name="role[]" multiple>
-              <option value="leader">Leader</option>
-              <option value="follower">Follower</option>
-            </select>
           </label>
         </p>
         <p>

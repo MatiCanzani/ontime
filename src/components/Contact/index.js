@@ -5,7 +5,7 @@ const Contact = () => {
     <section id="contact">
       <h2> Contact </h2>
       <form
-        name="contact"
+        // name="contact"
         method="POST"
         data-netlify="true"
         data-netlify-honeypot="bot-field"

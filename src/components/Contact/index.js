@@ -51,6 +51,11 @@ const Contact = () => {
             />
           </label>
         </p>
+        <p hidden>
+          <label>
+            Don’t fill this out: <input name="bot-field" onChange={handleChange} />
+          </label>
+        </p>
         <p>
           <label>
             Your Email:{" "}

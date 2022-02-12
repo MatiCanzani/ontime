@@ -9,7 +9,8 @@ const Contact = () => {
         name="contact"
         method="POST"
         data-netlify="true"
-git a      >
+        data-netlify-honeypot="bot-field"
+      >
         <p>
           <label>
             Your Name: <input type="text" name="name" placeholder="Your Name" />

@@ -1,27 +1,33 @@
 import React, { useState } from "react";
 import { navigate } from "gatsby";
 
-const [state, setState] = useState({});
-
-const handleChange = (e) => {
-  setState({ ...state, [e.target.name]: e.target.value });
-};
-const handleSubmit = (e) => {
-  e.preventDefault();
-  const form = e.target;
-  fetch("/", {
-    method: "POST",
-    headers: { "Content-Type": "application/x-www-form-urlencoded" },
-    body: encode({
-      "form-name": form.getAttribute("name"),
-      ...state,
-    }),
-  })
-    .then(() => navigate(form.getAttribute("action")))
-    .catch((error) => alert(error));
-};
+const encode = (data) => {
+  return Object.keys(data)
+    .map((key) => encodeURIComponent(key) + '=' + encodeURIComponent(data[key]))
+    .join('&')
+}
 
 const Contact = () => {
+  const [state, setState] = useState({});
+
+  const handleChange = (e) => {
+    setState({ ...state, [e.target.name]: e.target.value });
+  };
+  const handleSubmit = (e) => {
+    e.preventDefault();
+    const form = e.target;
+    fetch("/", {
+      method: "POST",
+      headers: { "Content-Type": "application/x-www-form-urlencoded" },
+      body: encode({
+        "form-name": form.getAttribute("name"),
+        ...state,
+      }),
+    })
+      .then(() => navigate(form.getAttribute("action")))
+      .catch((error) => alert(error));
+  };
+
   return (
     <section id="contact">
       <h2> Contact </h2>
@@ -29,7 +35,7 @@ const Contact = () => {
         name="contact"
         method="POST"
         data-netlify="true"
-        data-netlify-honeypot="bot-field"
+        netlify-honeypot="bot-field"
         action="/success/"
         onSubmit={handleSubmit}
       >

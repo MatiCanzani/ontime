@@ -1,30 +1,16 @@
 import React from "react";
 import { Link } from "gatsby";
-import { navigate } from "gatsby";
-import { AnchorLink } from "gatsby-plugin-anchor-links";
-
-const handleClick = (id) => {
-  navigate(`#${id}`);
-};
+import Navbar from "../Navbar";
+import "./styles.scss";
 
 const Header = () => {
   return (
-    <div className="container">
-      <div className="Logo">
-        <Link to="/">OnTime</Link>
-      </div>
-      <div className="Navigation">
-        <AnchorLink to="/#works" title="Works" stripHash>
-          Works
-        </AnchorLink>
-        <AnchorLink to="/#about" title="About" stripHash>
-          About
-        </AnchorLink>
-        <AnchorLink to="/#contact" title="Contact" stripHash>
-          Contact
-        </AnchorLink>
-      </div>
-    </div>
+    <header className="container">
+      <Link className="link" to="/">
+        OnTime
+      </Link>
+      <Navbar />
+    </header>
   );
 };
 

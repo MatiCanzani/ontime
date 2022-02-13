@@ -1,17 +1,20 @@
-@import "variables";
-@import "animation";
-html {
+@use "../styles/variables";
+@use "../styles/animation";
+
+html,
+body {
   font-size: 62.5%;
-  box-sizing: boder-boox;
-}
-*,
-*:before,
-*after {
-  box-sizing: inherit;
+  box-sizing: border-box;
+  *,
+  *:before,
+  *:after {
+    box-sizing: inherit;
+    cursor: none;
+  }
 }
 
 body {
-  background-color: $bkg-white;
+  background-color: variables.$bkg-white;
 }
 
 .background {
@@ -19,8 +22,7 @@ body {
   background-repeat: repeat;
   background-size: cover;
   background-blend-mode: multiply;
-  font-family: $font-menu;
-  color: whitesmoke;
+  font-family: variables.$font-menu;
   position: fixed;
   height: 100vh;
   width: 100vw;
@@ -49,7 +51,7 @@ body {
   background-repeat: repeat;
   background-size: cover;
   background-blend-mode: multiply;
-  font-family: $font-menu;
+  font-family: variables.$font-menu;
   position: fixed;
   height: 100vh;
   width: 100vw;
@@ -63,7 +65,7 @@ body {
   background-repeat: repeat;
   background-size: cover;
   background-blend-mode: multiply;
-  font-family: $font-menu;
+  font-family: variables.$font-menu;
   position: fixed;
   height: 100vh;
   width: 100vw;
@@ -72,47 +74,60 @@ body {
   animation: animation 300s linear infinite 0s;
 }
 
+.container-fluid {
+  width: 92%;
+  margin: 0 auto;
+  margin-top: 1rem;
+
+  @media (min-width: 768px) {
+    width: 90%;
+    margin: 0 auto;
+  }
+  @media (min-width: 992px) {
+    width: 90%;
+    margin: 0 auto;
+  }
+  @media (min-width: 1200px) {
+    width: 90%;
+    margin: 0 auto;
+  }
+}
+
 h1,
 h2,
 h4 {
-  font-family: $font-menu;
+  font-family: variables.$font-menu;
   text-align: center;
 }
 
 h1 {
   font-weight: 900;
-  color: $color-title;
+  color: variables.$color-title;
   margin-top: 2rem;
   margin-bottom: 1rem !important;
 }
 
 h2 {
   font-weight: 500;
-  color: $color-subtitle;
+  color: variables.$color-subtitle;
   font-size: 1rem;
   margin: 0;
 }
 h4 {
-  color: $color-title;
+  color: variables.$color-title;
   font-weight: 500;
 }
 
-.container {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-direction: column;
+section {
+  width: 95%;
   height: 100vh;
+  @media (min-width: 768px) {
+    width: 90%;
+    margin: 0 auto;
+  }
 }
 
 @media screen and (min-width: 767px) {
-  .container {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-    height: 100vh;
-  }
   h1 {
     font-size: 3.3rem !important;
     margin-top: 2rem;
@@ -122,7 +137,3 @@ h4 {
   }
 }
 
-.logo {
-  height: 80px;
-  width: auto;
-}

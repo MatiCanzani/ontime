@@ -1,11 +1,12 @@
 import React, { useState } from "react";
 import { navigate } from "gatsby";
+import "./styles.scss";
 
 const encode = (data) => {
   return Object.keys(data)
-    .map((key) => encodeURIComponent(key) + '=' + encodeURIComponent(data[key]))
-    .join('&')
-}
+    .map((key) => encodeURIComponent(key) + "=" + encodeURIComponent(data[key]))
+    .join("&");
+};
 
 const Contact = () => {
   const [state, setState] = useState({});
@@ -30,57 +31,70 @@ const Contact = () => {
 
   return (
     <section id="contact">
-      <h2> Contact </h2>
-      <form
-        name="contact"
-        method="POST"
-        data-netlify="true"
-        netlify-honeypot="bot-field"
-        action="/success/"
-        onSubmit={handleSubmit}
-      >
-        <input type="hidden" name="form-name" value="contact" />
-        <p>
-          <label>
-            Your Name:{" "}
-            <input
-              type="text"
-              name="name"
-              placeholder="Your Name"
-              onChange={handleChange}
-            />
-          </label>
-        </p>
-        <p hidden>
-          <label>
-            Don’t fill this out: <input name="bot-field" onChange={handleChange} />
-          </label>
-        </p>
-        <p>
-          <label>
-            Your Email:{" "}
-            <input
-              type="email"
-              name="email"
-              placeholder="Yor email"
-              onChange={handleChange}
-            />
-          </label>
-        </p>
-        <p>
-          <label>
-            Message:{" "}
-            <textarea
-              name="message"
-              placeholder="your message"
-              onChange={handleChange}
-            ></textarea>
-          </label>
-        </p>
-        <p>
-          <button type="submit">Send</button>
-        </p>
-      </form>
+      <h2> Interested in working with us? </h2>
+      <h2> Get in touch!</h2>
+      <div className="section-contact">
+        <form
+          name="contact"
+          method="POST"
+          data-netlify="true"
+          netlify-honeypot="bot-field"
+          action="/success/"
+          onSubmit={handleSubmit}
+          className="contact-form"
+        >
+          <div className="form-cntr">
+            <input type="hidden" name="form-name" value="contact" />
+            <p>
+              <input
+                type="text"
+                name="name"
+                placeholder="your name*"
+                onChange={handleChange}
+              />
+            </p>
+          </div>
+          <p hidden>
+            <label>
+              Don’t fill this out:{" "}
+              <input name="bot-field" onChange={handleChange} />
+            </label>
+          </p>
+          <div className="form-cntr">
+            <p>
+              <input
+                type="email"
+                name="email"
+                placeholder="your email*"
+                onChange={handleChange}
+              />
+            </p>
+          </div>
+          <div className="form-cntr">
+            <p>
+              <textarea
+                name="message"
+                placeholder="your message"
+                onChange={handleChange}
+                rows="4" cols="50"
+              ></textarea>
+            </p>
+          </div>
+          <div className="button-cntr">
+            <button className="send-button" type="submit">
+              CONTACT US
+            </button>
+          </div>
+        </form>
+        {/* <div className="contact-info">
+          <h3>Locations</h3>
+          <div>
+            <h4>BUENOS AIRES</h4>
+            <h4>BOSTON</h4>
+            <h4>UK</h4>
+          </div>
+        </div> */}
+      </div>
     </section>
   );
 };

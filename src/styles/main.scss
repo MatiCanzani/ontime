@@ -1,16 +1,19 @@
 @use "../styles/variables";
 @use "../styles/animation";
 
-html,
-body {
+html{
   font-size: 62.5%;
+}
+body {
+  font-size: 1.6rem;
   box-sizing: border-box;
+}
   *,
   *:before,
   *:after {
     box-sizing: inherit;
     cursor: none;
-  }
+
 }
 
 body {
@@ -95,6 +98,7 @@ body {
 
 h1,
 h2,
+H3,
 h4 {
   font-family: variables.$font-menu;
   text-align: center;
@@ -110,8 +114,9 @@ h1 {
 h2 {
   font-weight: 500;
   color: variables.$color-subtitle;
-  font-size: 1rem;
+  font-size: 2rem;
   margin: 0;
+  padding-top: 4rem;
 }
 h4 {
   color: variables.$color-title;
@@ -133,7 +138,7 @@ section {
     margin-top: 2rem;
   }
   h2 {
-    font-size: 1.4rem;
+    font-size: 4rem;
   }
 }
 

@@ -12,7 +12,7 @@
   a{
     text-decoration: none;
     will-change: transform;
-    color: variables.$color-title;
+    color: variables.$grey-shark;
   }
   & a:hover, :focus {
     color: variables.$yellow;
@@ -31,10 +31,11 @@
   display: none;
   height: auto;
   div {
+    z-index: 9999;
     width: 2.5rem;
     height: 0.2rem;
     margin: 0.4rem;
-    background: variables.$color-title;
+    background: variables.$grey-shark;
     transition: 0.4s ease-in;
   }
 }
@@ -54,7 +55,7 @@
     font-size: 3rem;
     transform: translateX(100%);
     transition: 0.5s ease-in-out;
-    background-color: variables.$color-title;
+    background-color: variables.$grey-shark;
     a{
       color: variables.$bkg-white;
     }
@@ -64,6 +65,7 @@
 //nav active class
 .nav__active {
   transform: translateX(0);
+  z-index: 10;
 }
 .slide-right {
   -webkit-animation: slide-right 0.5s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;

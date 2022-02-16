@@ -6,17 +6,21 @@ import Contact from "../components/Contact";
 import Works from "../components/Works";
 import About from "../components/About";
 import Hero from "../components/Hero";
+import Footer from "../components/Footer";
 
 const IndexPage = () => {
   return (
-    <Layout>
-      <main>
-        <Hero />
-        <Works />
-        <About />
-        <Contact />
-      </main>
-    </Layout>
+    <>
+      <Layout>
+        <main>
+          <Hero />
+          <Works />
+          <About />
+          <Contact />
+        </main>
+      </Layout>
+      <Footer />
+    </>
   );
 };
 

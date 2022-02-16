@@ -106,25 +106,25 @@ h4 {
 
 h1 {
   font-weight: 900;
-  color: variables.$color-title;
+  color: variables.$grey-shark;
   margin-top: 2rem;
   margin-bottom: 1rem !important;
 }
 
 h2 {
   font-weight: 500;
-  color: variables.$color-subtitle;
+  color: variables.$grey-grey-shark-light;
   font-size: 2rem;
   margin: 0;
   padding-top: 4rem;
 }
 h4 {
-  color: variables.$color-title;
+  color: variables.$grey-shark;
   font-weight: 500;
 }
 
 section {
-  width: 95%;
+  width: 100%;
   height: 100vh;
   @media (min-width: 768px) {
     width: 90%;

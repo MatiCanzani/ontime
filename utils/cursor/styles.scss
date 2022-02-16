@@ -12,7 +12,7 @@
     @extend .cursor;
   width: 10px;
   height: 10px;
-  background-color: variables.$yellow;
+  background-color: variables.$grey-shark;
   z-index: 10001;
 
 }
@@ -20,7 +20,7 @@
     @extend .cursor;
   width: 40px;
   height: 40px;
-  border: 1px solid variables.$light-yellow;
+  border: 1px solid variables.$yellow;
   background-color: none; 
   opacity: 0.7;
 

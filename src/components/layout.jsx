@@ -1,8 +1,8 @@
 import React from "react";
 import "../styles/main.scss";
 import Helmet from "react-helmet";
-import Header from '../components/Header';
-import Cursor from '../../utils/cursor/index';
+import Header from "./Header";
+import Cursor from "../../utils/cursor/index";
 
 const Layout = ({ children }) => {
   return (
@@ -15,7 +15,7 @@ const Layout = ({ children }) => {
           sizes="32x32"
           href="../images/favicon/favicon-32x32.png"
         />
-         <link
+        <link
           rel="stylesheet"
           href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css"
           integrity="sha512-NhSC1YmyruXifcj/KFRWoC561YpHpc5Jtzgvbuzx5VozKpWvQ+4nXhPdFgmx8xqexRcpAglTj9sIBWINXa8x5w=="
@@ -33,7 +33,7 @@ const Layout = ({ children }) => {
         <div className="background3"></div>
       </div>
       <div className="container-fluid">
-      <Header />
+        <Header />
         <Cursor />
         {children}
       </div>

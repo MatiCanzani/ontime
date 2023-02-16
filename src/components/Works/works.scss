@@ -1,0 +1,22 @@
+@use "../../styles/variables";
+.logos-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+  height: 75vh;
+}
+
+.brand-logo {
+  height: auto;
+  width: 24rem;
+  filter: blur(4px);
+  &:hover {
+    filter: brightness(.5);
+  }
+}
+.video {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}

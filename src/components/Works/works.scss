@@ -89,6 +89,7 @@
 .modal__video-style {
   border-radius: 20px;
   z-index: 100;
+  max-height: 550px;
 }
 
 @media screen and (max-width: 800px) {

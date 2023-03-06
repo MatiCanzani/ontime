@@ -7,6 +7,7 @@ const Video = ({ videoWidth, videoHeight, videoSrcURL, videoTitle }) => (
       controlsList="nodownload noremoteplayback noplaybackrate foobar"
       loading="lazy"
       autoPlay
+      className="max-h-550"
     >
       <source src={videoSrcURL} type="video/mp4" />
     </video>

@@ -20,7 +20,6 @@ const VideoModal = ({ closeModal, videosrc }) => {
           />
           <Video
             videoSrcURL={videosrc}
-            videoTitle
             className="modal__video-style"
             onLoad={spinner}
             videoWidth="800"

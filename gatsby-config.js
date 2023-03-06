@@ -32,5 +32,22 @@ module.exports = {
         offset: -100,
       },
     },
+    {
+      resolve: "gatsby-plugin-preload",
+      options: {
+        preloaders: [
+          {
+            href: "https://res.cloudinary.com/mcanzani/video/upload/c_scale,h_502/v1675956657/Ontime%20Assets/Chandon_Extra_2_-_4K_kxynkd.mp4",
+            as: "video",
+            type: "video/mp4",
+          },
+          {
+            href: "https://res.cloudinary.com/mcanzani/video/upload/c_scale,w_889/v1676584143/Ontime%20Assets/B289F7C9-EA24-470D-A76D-A1DFA099896D_2_1_cgqy5l.mp4",
+            as: "video",
+            type: "video/mp4",
+          },
+        ],
+      },
+    },
   ],
 };

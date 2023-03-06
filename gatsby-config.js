@@ -4,6 +4,7 @@ module.exports = {
     title: "on time creative",
   },
   plugins: [
+    "gatsby-plugin-postcss",
     "gatsby-plugin-sass",
     "gatsby-plugin-image",
     "gatsby-plugin-react-helmet",

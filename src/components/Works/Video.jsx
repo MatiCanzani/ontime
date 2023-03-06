@@ -1,11 +1,15 @@
 import React from "react";
-const Video = ({ videoWidth, videoHeight, videoSrcURL, videoTitle, ...props }) => (
+const Video = ({ videoWidth, videoHeight, videoSrcURL, videoTitle }) => (
   <div className="video">
-    <video width = { videoWidth } height = { videoHeight } controls controlsList = "nodownload noremoteplayback noplaybackrate foobar">
-      <source src={videoSrcURL} type="video/mp4"/>
+    <video
+      width={videoWidth}
+      height={videoHeight}
+      controlsList="nodownload noremoteplayback noplaybackrate foobar"
+      loading="lazy"
+      autoPlay
+    >
+      <source src={videoSrcURL} type="video/mp4" />
     </video>
   </div>
 );
 export default Video;
-
-

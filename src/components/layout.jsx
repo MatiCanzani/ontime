@@ -1,7 +1,7 @@
 import React from "react";
 import "../styles/main.scss";
 import Helmet from "react-helmet";
-import Header from "./Header";
+import Header from "./Header/Header";
 import Cursor from "../../utils/cursor/index";
 
 const Layout = ({ children }) => {

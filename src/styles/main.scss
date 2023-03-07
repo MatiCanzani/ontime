@@ -149,4 +149,10 @@ section {
   }
 }
 
+div {
+  &:hover ~ #cursorOutline {
+    transform: scale(0.5);
+    background-color: yellow;
+  }
+}
 

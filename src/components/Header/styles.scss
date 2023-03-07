@@ -6,8 +6,9 @@
     align-items: center;
     // border-bottom: 1px solid $white;
     text-transform: uppercase;
-    position: fixed;  
+    position: fixed;
     width: 90%;
+    z-index: 2;
   }
   .link{
     text-decoration: none;
@@ -16,4 +17,3 @@
     font-size: 1.6rem;
   }
 
-  

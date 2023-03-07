@@ -38,10 +38,9 @@ const Works = () => {
           alt="Chandon"
           onClick={() => openModal(chandonVideo)}
         />
-        ;
-        <img className="brand-logo" src={sass} alt="sass" />;
+        <img className="brand-logo" src={sass} alt="sass" />
         <img className="brand-logo" src={cambio} alt="Cambio" />
-        <img className="brand-logo" src={iqos} alt="iqos" />;
+        <img className="brand-logo" src={iqos} alt="iqos" />
       </div>
       {modal && videoUrl && (
         <VideoModal closeModal={setModal} videosrc={videoUrl} />

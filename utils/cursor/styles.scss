@@ -1,4 +1,4 @@
-@use '../../src/styles/variables';
+@use "../../src/styles/variables";
 
 .cursor {
   position: fixed;
@@ -9,15 +9,14 @@
   pointer-events: none;
 }
 .cursor-dot {
-    @extend .cursor;
+  @extend .cursor;
   width: 10px;
   height: 10px;
   background-color: variables.$grey-shark;
   // z-index: 10001;
-
 }
 .cursor-outline {
-    @extend .cursor;
+  @extend .cursor;
   width: 40px;
   height: 40px;
   border: 1px solid variables.$grey-shark;
@@ -30,12 +29,11 @@
 }
 
 @media screen and (max-width: 768px) {
-  .cursor{
+  .cursor {
     display: none;
     cursor: pointer;
   }
 }
-
 
 .cursorCircle {
   height: 10px;
@@ -43,9 +41,11 @@
   background-color: variables.$grey-shark;
   border-radius: 50%;
   position: absolute;
-  display: none;
 }
 
-div:hover ~ .cursor-outline {
-  transform: scale(0.5);
+div {
+  &:hover ~ #cursorOutline {
+    transform: scale(0.5);
+    background-color: yellow;
+  }
 }
